@@ -1,0 +1,22 @@
+try:
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+
+    if num1 < 0 or num2 < 0:
+        print("Error: Please enter non-negative numbers.")
+
+    elif num2 == 0:
+        print("Error: The second number cannot be zero.")
+
+    else:
+        total = num1 + num2
+        result = num1 / num2
+
+        print("Sum:", total)
+        print("Division:", result)
+
+except ValueError:
+    print("Invalid input! Please enter numbers only.")
+
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero.")
